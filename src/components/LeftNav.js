@@ -6,7 +6,7 @@ class LeftNav extends React.Component {
     return(
         <div className="content-leftnav">
           <h3>Wangqi.Coner</h3>
-          <Link to='/'activeStyle={{backgroundColor: 'rgba(255, 255, 255, 0.2);' color:'#1f0775'}} onlyActiveOnIndex={true}>
+          <Link to='/'activeStyle={{backgroundColor: 'rgba(255, 255, 255, 0.2)',color:'#1f0775'}} onlyActiveOnIndex={true}>
           <span className="glyphicon glyphicon-home"></span><br />
           Home
           </Link>
