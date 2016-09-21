@@ -25,18 +25,24 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'src')
-    },
-    {
-      test: /\.css$/,
-      loader: 'style!css!autoprefixer'
-    },
-    {
-      test: /\.(jpe?g|png)$/,
-      loader: 'file-loader'
-    }]
+    loaders: [
+      {
+        test: /\.js$/,
+        loaders: ['babel'],
+        include: path.join(__dirname, 'src')
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css!autoprefixer'
+      },
+      {
+        test: /\.(jpe?g|png)$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "url?limit=10000"
+      }
+    ]
   }
 };
