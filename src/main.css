@@ -1,3 +1,7 @@
+body{
+  -webkit-font-smoothing: antialiased;
+}
+
 .content-wrap{
   display: flex;
   flex-direction: column;
@@ -40,11 +44,7 @@
 .content-footer a:hover,a:focus{
   text-decoration: none;
 }
-.content-main{
-  flex-grow: 1;
-  background-color:lightblue ;
-  overflow-y:scroll;
-}
+
 .header-but{
   background-color: teal;
   background-color: rgba(0, 0, 0, 0.2);;
@@ -61,25 +61,105 @@
   font-size: 22px;
 
 }
-.content-leftnav{
+.left-nav{
   display: flex;
   flex-direction: column;
-  width:230px;
+  width:300px;
   background-color: #00BCD4 ;
   color:#fff;
   align-items: center;
   padding-top: 50px;
 }
-.content-leftnav a{
+.left-nav a{
   color:#fff;
   margin-top: 20px;
-  padding: 10px 120px;
+  padding: 10px 90px;
 
 }
-.content-leftnav a:hover{
+.left-nav a:hover{
   background-color: rgba(117, 237, 165, 0.2);;
   text-decoration: none;
 }
-.content-leftnav a:focus{
+.left-nav a:focus{
   background-color: rgba(255, 255, 255, 0.2);;
+}
+.content-main{
+  flex-grow: 1;
+  overflow-y: scroll;
+  display: flex;
+}
+.home-container{
+  background-image: url(./images/1.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  display: flex;
+}
+.home-cover{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+.home-item{
+  color:#fff;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.home-btn{
+  border: none;
+  border-radius: 2px;
+  background-color: #ff4081;
+  padding:8px 20px;
+  font-size: 16px;
+}
+.home-btn:hover{
+  background-color: #00bcd4;
+}
+.work-content{
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  justify-content:space-between;
+
+}
+.work-wrap{
+    position: relative;
+    width: 100%;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    flex-grow: 0;
+
+}
+@media (min-width:540px) {
+   .work-wrap{
+     width:31%;
+   }
+ }
+.work-wrap img{
+
+  width: 100%;
+  display: block;
+  flex-grow: 1;
+}
+.work-little{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color:#fff;
+  padding-left: 10px;
+  border-radius: 0px 0px 5px 5px;;
+  left:0;
+}
+.about-content h3{
+  border-left: 5px solid #00bcd4;
+  margin-left: 10px;
+
 }
